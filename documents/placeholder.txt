@@ -1,0 +1,36 @@
+SECOND RENAISSANCE — DOCUMENT CORPUS
+=====================================
+
+This folder is the single place to manage the chatbot's knowledge base.
+
+HOW TO ADD CONTENT
+------------------
+Drop any of the following file types into this folder:
+  • .txt   — plain text
+  • .md    — Markdown
+  • .pdf   — PDF (text is extracted automatically at startup)
+
+The server watches this folder for changes. When you add, remove, or edit a
+file, the corpus is reloaded automatically within a second — no restart needed.
+
+WHAT TO PUT HERE
+----------------
+Add documents that explain the ideas, history, values, and vocabulary of the
+Second Renaissance movement. Good candidates include:
+
+  • Foundational essays or manifestos
+  • Explanatory overviews written for a general audience
+  • Glossaries of key terms and concepts
+  • FAQs or introductory guides
+  • Transcripts of talks or interviews
+  • Academic papers (plain-text extracts work best)
+
+TIPS
+----
+  • Larger documents = richer answers, but also more tokens per request.
+    Prompt caching is enabled, so the first request after a change pays full
+    cost; subsequent requests within 5 minutes reuse the cached corpus.
+  • There is no hard limit on number of documents, but keep the total corpus
+    under ~100,000 tokens (~400 KB of text) for best results with the default
+    model (claude-sonnet-4-6, 200 K context window).
+  • You can delete this placeholder file once you have real documents.
