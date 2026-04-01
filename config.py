@@ -1,6 +1,6 @@
 # ── Configuration ─────────────────────────────────────────────────────────────
 
-MODEL = "claude-sonnet-4-6"
+MODEL = "claude-haiku-4-5"
 MAX_TOKENS = 1024
 DOCUMENTS_FOLDER = "documents"
 
