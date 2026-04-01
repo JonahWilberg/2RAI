@@ -5,6 +5,13 @@ When referencing a document in a response, use the corresponding URL to form a m
 
 | Title | URL |
 |---|---|
-| Example: Understanding the Metacrisis | https://secondrenaissance.net/whitepapers/metacrisis |
+| Developmental Spaces White Paper | https://developmentalspaces.org/ |
+| From Polycrisis to Metacrisis | https://metacrisis.info/paper |
+| In Tech we Trust | https://secondrenaissance.net/papers/tech |
+| What and Why of a Second Renaissance | https://secondrenaissance.net/papers |
+| How of a Second Renaissance | https://secondrenaissance.net/papers |
+
+
+
 
 <!-- Add a row for each whitepaper using the format above -->
