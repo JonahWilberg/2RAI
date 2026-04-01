@@ -601,6 +601,19 @@
       font-size: 1.04em;
     }
 
+    .bot .bubble a {
+      color: #e8a0a0;
+      text-decoration: underline;
+      text-decoration-color: rgba(173,40,49,0.4);
+      text-underline-offset: 3px;
+      transition: color .15s, text-decoration-color .15s;
+    }
+
+    .bot .bubble a:hover {
+      color: #f5c5c5;
+      text-decoration-color: rgba(173,40,49,0.8);
+    }
+
     /* ── Input bar ──────────────────────────────────────────────────────── */
     #input-bar {
       flex-shrink: 0;
@@ -916,6 +929,10 @@ function renderMarkdown(raw) {
 
   s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
   s = s.replace(/\*(.+?)\*/g,     "<em>$1</em>");
+
+  // Markdown links [text](url) — open in new tab, never fabricated URLs
+  s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,
+    (_, text, url) => `<a href="${url}" target="_blank" rel="noopener noreferrer">${text}</a>`);
 
   s = s.replace(/^&gt; (.+)$/gm, "<blockquote>$1</blockquote>");
 
